@@ -1,28 +1,14 @@
 import { getAll } from "../api/posts";
+import navcatory from "./category";
+import producthome from "./product";
 
 const content = {
     async render() {
         const { data } = await getAll();
         return /* html */ `
-            <div class="flex">
-                <div class="w-[200px] h-[100%]">
-                    <ul class="border-solid border-2 border[#f3f3f3] h-[100%]">
-                        <li class="px-[30px] py-[10px]  hover:bg-[#f3f3f3] "><a class="" href="">Nước Hoa</a></li>
-                        <hr>
-                        <li class="px-[30px] py-[10px]  hover:bg-[#f3f3f3]   "><a class="" href="">Nước Hoa</a></li>
-                        <hr>
-                        <li class="px-[30px] py-[10px]  hover:bg-[#f3f3f3]  "><a class="" href="">Nước Hoa</a></li>
-                        <hr>
-                        <li class="px-[30px] py-[10px]  hover:bg-[#f3f3f3]  "><a class="" href="">Nước Hoa</a></li>
-                        <hr>
-                        <li class="px-[30px] py-[10px]   hover:bg-[#f3f3f3] "><a class="" href="">Nước Hoa</a></li>
-                        <hr>
-                        <li class="px-[30px] py-[10px]   hover:bg-[#f3f3f3] "><a class="" href="">Nước Hoa</a></li>
-                        <hr>
-                        <li class="px-[30px] py-[10px]  hover:bg-[#f3f3f3]  "><a class="" href="">Nước Hoa</a></li>
-                        <hr>
-                        <li class="px-[30px] py-[10px]  hover:bg-[#f3f3f3]  "><a class="" href="">Nước Hoa</a></li>
-                    </ul>
+             <div class="flex">
+                <div class="grid w-[200px] h-[100%]">      
+            ${await navcatory.render()}
                 </div>
                 <div class="banner bg-[white] w-[100%]">
                     <img style="height: 97%" id='anh' src='https://hali.vn/wp-content/uploads/2020/07/thiet-ke-banner-my-pham5.jpg' alt="" width='100%'>
@@ -59,81 +45,12 @@ const content = {
                 </div>
 
             </div>
-            <div class="conten my-[20px]">
+           <div class="conten my-[20px]">
                 <h1 class="font-bold text-[20px] py-[20px]">New Arrivals</h1>
-                <div class="product grid grid-cols-4 gap-5 ">
-                    <form action="">
-                        <div class=" khoiy border-solid border-2 border-[#f3f3f3] rounded-lg overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer  ">
-                            <div class=" w-[100%] ">
-                                <a href="#"> <img src="https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_auto,fl_lossy,dpr_1.2/w_620/n-5-l-eau-eau-de-toilette-spray-3-4fl-oz--packshot-default-105530-8848376922142.jpg" alt=""></a>
-                            </div>
-                            <div class="py-[10px] px-[10px] leading-8">
-                                <a href="#">
-                                    <h4 class="font-bold hover:underline">HP Pavilion 15</h4>
-                                </a>
-                                <p class="text-[15px] text-[red]">$450.000000</p>
-                                <p>130,000,000 lượt xem</p>
-                            </div>
-                            <div class="conten-item ">
-                                <button>Add to cart</button>
-                            </div>
-                        </div>
-                    </form>
-
-                     <form action="">
-                        <div class=" khoiy border-solid border-2 border-[#f3f3f3] rounded-lg overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer ">
-                            <div class=" w-[100%] ">
-                                <a href="#"> <img src="https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_auto,fl_lossy,dpr_1.2/w_620/bleu-de-chanel-eau-de-parfum-spray-3-4fl-oz--packshot-default-107360-8848377380894.jpg" alt=""></a>
-                            </div>
-                            <div class="py-[10px] px-[10px] leading-8">
-                                <a href="#">
-                                    <h4 class="font-bold hover:underline">HP Pavilion 15</h4>
-                                </a>
-                                <p class="text-[15px] text-[red]">$450.000000</p>
-                                <p>130,000,000 lượt xem</p>
-                            </div>
-                            <div class="conten-item ">
-                                <button>Add to cart</button>
-                            </div>
-                        </div>
-                    </form>
+                ${await producthome.render()}
+                
                     
-                    <form action="">
-                        <div class=" khoiy border-solid border-2 border-[#f3f3f3] rounded-lg overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer ">
-                            <div class=" w-[100%] ">
-                                <a href="#"> <img src="https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_auto,fl_lossy,dpr_1.2/w_620/coco-mademoiselle-eau-de-parfum-spray-3-4fl-oz--packshot-default-116520-8848376659998.jpg" alt=""></a>
-                            </div>
-                            <div class="py-[10px] px-[10px] leading-8">
-                                <a href="#">
-                                    <h4 class="font-bold hover:underline">HP Pavilion 15</h4>
-                                </a>
-                                <p class="text-[15px] text-[red]">$450.000000</p>
-                                <p>130,000,000 lượt xem</p>
-                            </div>
-                            <div class="conten-item ">
-                                <button>Add to cart</button>
-                            </div>
-                        </div>
-                    </form>
-                    <form action="">
-                        <div class=" khoiy border-solid border-2 border-[#f3f3f3] rounded-lg overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer ">
-                            <div class=" w-[100%] ">
-                                <a href="#"> <img src="https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_auto,fl_lossy,dpr_1.2/w_620/bleu-de-chanel-parfum-twist-and-spray-3x0-7fl-oz--packshot-default-107120-8826672349214.jpg" alt=""></a>
-                            </div>
-                            <div class="py-[10px] px-[10px] leading-8">
-                                <a href="#">
-                                    <h4 class="font-bold hover:underline">HP Pavilion 15</h4>
-                                </a>
-                                <p class="text-[15px] text-[red]">$450.000000</p>
-                                <p>130,000,000 lượt xem</p>
-                            </div>
-                            <div class="conten-item ">
-                                <button>Add to cart</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div>
+            </div>
                     <div class="banner2 my-[30px]">
                         <img src="https://storage.googleapis.com/sonduongmoi-com/2020/02/bbea4357-1551264167_chanel_perfume_banner.png" alt="">
                     </div>

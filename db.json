@@ -1,4 +1,22 @@
 {
+  "categorys": [
+    {
+      "id": 3,
+      "name": "Nước Hoa CoCo"
+    },
+    {
+      "id": 4,
+      "name": "Nước Hoa N5"
+    },
+    {
+      "id": 5,
+      "name": "Nước Hoa Nữ "
+    },
+    {
+      "id": 6,
+      "name": "Nước Hoa Nam"
+    }
+  ],
   "posts": [
     {
       "id": 1,
@@ -52,10 +70,10 @@
   "users": [
     {
       "email": "admin@gmail.com",
-      "password": "123456",
+      "password": "$2a$10$Q8iACh8ZkEi3I/9j2Wc/mOkjCFpmSXkQB2cWPz9qb2uytErnA5u1K",
       "username": "admin",
       "image": "http://res.cloudinary.com/hongvan/image/upload/v1645371911/products/e1ph7du5swjsycbm6qqw.jpg",
-      "id": 1
+      "id": "1"
     },
     {
       "username": "lee min ho",

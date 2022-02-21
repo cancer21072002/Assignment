@@ -24,14 +24,12 @@ const singin = {
             </button>
              </a>
                     <form method="Post" action="" class="mt-10" id="formSignin">
-
                         <div class="mb-4">
                             <label class="block text-gray-700 text-sm font-normal mb-2" for="username">
                 Email
               </label>
                             <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="email" v-model="form.email" type="email" required="" autofocus="" placeholder="Email" id="email-address">
                         </div>
-
                         <div class="mb-6">
                             <label class="block text-gray-700 text-sm font-normal mb-2" for="password">
                 Password
@@ -45,20 +43,17 @@ const singin = {
                                       Remember me
                                     </span>
                                 </label>
-
                             <div class="w-full text-right">
                                 <a class="text-blue-500 transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105" href="#">
                                        Forgot password
                                     </a>
                             </div>
                         </div>
-
                         <div class="mt-7">
                             <button class="bg-blue-500 w-full py-3 rounded-xl text-white shadow-xl hover:shadow-inner focus:outline-none transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
                                     Login
                                 </button>
                         </div>
-
                         <div class="flex mt-7 items-center text-center">
                             <hr class="border-gray-300 border-1 w-full rounded-md">
                             <label class="block font-medium text-sm text-gray-600 w-full">
@@ -66,22 +61,18 @@ const singin = {
                                 </label>
                             <hr class="border-gray-300 border-1 w-full rounded-md">
                         </div>
-
                         <div class="flex mt-7 justify-center w-full">
                             <button class="mr-5 bg-blue-500 border-none px-4 py-2 rounded-xl cursor-pointer text-white shadow-xl hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
                                     
                                     Facebook
                                 </button>
-
                             <button class="bg-red-500 border-none px-4 py-2 rounded-xl cursor-pointer text-white shadow-xl hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
                                     
                                     Google
                                 </button>
                         </div>
-
                         <div class="mt-7">
                             <div class="flex justify-center items-center">
-
                                 <a href="/singup" class=" text-blue-500 transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
                                        Not registered yet? Create an Account
                                     </a>

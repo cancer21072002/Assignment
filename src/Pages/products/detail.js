@@ -1,10 +1,11 @@
 import toastr from "toastr";
 import Headers from "../../Components/Header";
 import footer from "../../Components/Footer";
-import {get } from "../../api/products";
+import { get } from "../../api/products";
 import { $ } from "../../utils";
 import { addToCart } from "../../utils/cart";
 import "toastr/build/toastr.min.css";
+import producthome from "../../Components/product";
 
 const detail = {
     async render(id) {
@@ -15,9 +16,8 @@ const detail = {
         </header>
             <article class=" mx-auto w-[1200px] ">
      <div class="mx-auto w-[1200px] my-10">
-
             <div class="grid grid-cols-2 mb-3">
-                <h2 class="font-bold text-xl ">${data.name}</h2>
+                <h2 class="font-bold text-xl ">${data.productname}</h2>
                 <div class="mt-2 flex justify-end">
                     <a href="" class="mt-1">
             <ul class="flex ">
@@ -57,27 +57,10 @@ const detail = {
                 <div class="mr-3">
                     <div class="border-[1px]">
                         <a href="">
-                            <img src="https://media-cdn.laodong.vn/Storage/NewsPortal/2021/5/26/913299/Ngan-Ha25.jpg">
+                            <img src="${data.image}">
                         </a>
                     </div>
-                    <div class="flex flex-row justify-center">
-                        <a href="" class="mt-3 text-center hover:font-bold">
-                            <img class="phone-color" src="https://images.fpt.shop/unsafe/fit-in/40x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/9/15/637673217820889289_iphone-13-pro-max-vang-1.jpg">
-                            <p class="ml-3">Vàng</p>
-                        </a>
-                        <a href="" class="mt-3 text-center hover:font-bold ml-3">
-                            <img class="phone-color " src="https://images.fpt.shop/unsafe/fit-in/40x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/9/15/637673217826201634_iphone-13-pro-max-xanh-1.jpg">
-                            <p class="ml-3">Xanh</p>
-                        </a>
-                        <a href="" class="mt-3 text-center hover:font-bold ml-3">
-                            <img class="phone-color" src="https://images.fpt.shop/unsafe/fit-in/40x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/9/15/637673217819795830_iphone-13-pro-max-xam-1.jpg">
-                            <p class="ml-3">Xám</p>
-                        </a>
-                        <a href="" class="mt-3 text-center hover:font-bold ml-3">
-                            <img class="phone-color" src="https://images.fpt.shop/unsafe/fit-in/40x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/9/15/637673217819171028_iphone-13-pro-max-bac-1.jpg">
-                            <p class="ml-3">Bạc</p>
-                        </a>
-                    </div>
+                    
                     <div class="flex mt-3 justify-center">
                         <div class="flex mr-2">
                             <i class="fas fa-award text-red-700  mr-2"></i>
@@ -91,32 +74,13 @@ const detail = {
                 </div>
                 <div class="detail">
                     <div class="flex ">
-                        <span class="text-red-700 font-semibold text-2xl mr-5 mt-2">${data.price}</span>
-                        <span class="font-semibold text-lg line-through mt-3">30.990.000₫</span>
-                        <span class="ml-52">Trả góp chỉ từ 3.000.500₫/tháng</span>
+                        <span class="text-red-700 font-semibold text-2xl mr-5 mt-2">${
+    data.price
+}</span>
+                        <span class="font-semibold text-lg line-through mt-3">15.589.000₫</span>
+                        s
                     </div>
-                    <div class="mt-2 bg-slate-100 grid grid-cols-4 rounded-md">
-                        <label class="radio">
-                            <input type="radio" class="form-radio" name="GB" value="">
-                            <span class="ml-1 font-bold">128GB</span>
-                            <span class="block">30.990.000₫</span>
-                        </label>
-                        <label class="radio">
-                            <input type="radio" class="form-radio" name="GB" value="">
-                            <span class="ml-1 font-bold">256GB</span>
-                            <span class="block">33.490.000₫</span>
-                        </label>
-                        <label class="radio">
-                            <input type="radio" class="form-radio" name="GB" value="">
-                            <span class="ml-1 font-bold">512GB</span>
-                            <span class="block">40.990.000₫</span>
-                        </label>
-                        <label class="radio">
-                            <input type="radio" class="form-radio" name="GB" value="">
-                            <span class="ml-1 font-bold">1TB</span>
-                            <span class="block">45.990.000₫</span>
-                        </label>
-                    </div>
+                    
                     <div class="box-Promo">
                       <div class="endow py-[20px]">
                             <span class="bg-[#e9ecef] px-3 font-bold">Ưu đãi thêm</span>
@@ -125,66 +89,36 @@ const detail = {
                             <li class="inline-flex">
                                 <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
                                 <div>
+                                    <h1 class="font-bold">Sản Phẩm:</h1>
                                     <span>
-                                        Tặng gói iCloud 50GB miễn phí 3 tháng
+                                         N°5, mùi hương của người phụ nữ. Đóa hoa rực rỡ và ngát hương hòa quyện cùng nốt aldehyde, gói gọn trong lọ thủy tinh có thiết kế tối giản mang tính biểu tượng. Một mùi hương huyền thoại và bất tận.
                                     </span>
                                     <a href="" class="text-blue-600 hover:underline">Xem chi tiết</a>
                                 </div>
                             </li>
+
                             <li class="inline-flex">
                                 <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
                                 <div>
+                                    <h1 class="font-bold">Thành Phần:</h1>
                                     <span>
-                                        Giảm sốc 50% cho gói bảo hành vàng chỉ từ 550.000đ
+                                        Eau de Parfum lấy cảm hứng từ hương hoa kết hợp với aldehyde điển hình. Hương hoa là sự hoà quyện hài hoà và tinh tế giữa hoa hồng, hoa nhài và hương cam quýt. Thành phần aldehyde mang đến sự độc đáo, cùng những nốt hương vanilla cho mùi hương thêm nồng nàn, quyến rũ.
                                     </span>
                                     <a href="" class="text-blue-600 hover:underline">Xem chi tiết</a>
                                 </div>
                             </li>
+
                             <li class="inline-flex">
                                 <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
                                 <div>
+                                    <h1 class="font-bold">Cảm Hứng</h1>
                                     <span>
-                                        Thu cũ đổi mới trợ giá 15%
+                                         Năm 1921, Gabrielle Chanel đã yêu cầu Ernest Beaux chế tác nên "một loại nước hoa dành cho phụ nữ và mang hương thơm như một người phụ nữ", mãnh liệt và nguyên bản. Những mẫu nước hoa mang mùi hương của sự mê hoặc, lần đầu tiên sử dụng thành phần aldehyde, đã được đưa ra để cô lựa chọn. Mademoiselle quyết định chọn mẫu thứ năm và đặt cho mùi hương này một cái tên đơn giản, N°5. Thiết kế chai độc đáo, dán nhãn trắng trên thân chai và nắp đậy được vát góc như một viên kim cương. Năm 1986, Jacques Polge, Nghệ nhân chế tác nước hoa của CHANEL từ năm 1978 đã điều chế và tạo nên một phiên bản trọn vẹn hơn của N°5: Eau de Parfum.
                                     </span>
                                     <a href="" class="text-blue-600 hover:underline">Xem chi tiết</a>
                                 </div>
                             </li>
-                            <li class="inline-flex">
-                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                                <div>
-                                    <span>
-                                        Bảo hành 2 năm chính hãng
-                                    </span>
-                                    <a href="" class="text-blue-600 hover:underline">Xem chi tiết</a>
-                                </div>
-                            </li>
-                            <li class="inline-flex">
-                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                                <div>
-                                    <span>
-                                        Tặng PMH 200.000đ mua Sạc Magsafe
-                                    </span>
-                                    <a href="" class="text-blue-600 hover:underline">Xem chi tiết</a>
-                                </div>
-                            </li>
-                            <li class="inline-flex">
-                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                                <div>
-                                    <span>
-                                        Tặng PMH 300.000đ mua Ốp lưng chính hãng
-                                    </span>
-                                    <a href="" class="text-blue-600 hover:underline">Xem chi tiết</a>
-                                </div>
-                            </li>
-                            <li class="inline-flex">
-                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                                <div>
-                                    <span>
-                                        Cơ hội trúng 22 Hổ Vàng trị giá 6 triệu
-                                    </span>
-                                    <a href="" class="text-blue-600 hover:underline">Xem chi tiết</a>
-                                </div>
-                            </li>
+                           
                         </ul>
                     </div>
                     <div class="btn-buy ">
@@ -200,100 +134,29 @@ const detail = {
         </div>
         <div class ="">
               <h1 class="uppercase text-[16px] font-bold border-b-[1px] mt-2 pl-1"> Thông tin chi tiết sản phẩm </h1>
-
-              <p class="text-[14px] leading-[1.8] mb-3"> le the tam
+              <p class="text-[14px] leading-[1.8] mb-3"> ${data.detail}
                 </p>
         </div>
-
                     <div class="conten my-[20px]">
                 <h1 class="font-bold text-[20px] py-[20px]">New Arrivals</h1>
-                <div class="product grid grid-cols-4 gap-5 ">
-                    <form action="">
-                        <div class=" khoiy border-solid border-2 border-[#f3f3f3] rounded-lg  ">
-                            <div class=" w-[100%] ">
-                                <a href="#"> <img src="https://vnn-imgs-f.vgcloud.vn/2019/08/07/23/apple-tiep-tuc-thong-tri-thi-truong-may-tinh-bang.jpg" alt=""></a>
-                            </div>
-                            <div class="py-[10px] px-[10px] leading-8">
-                                <a href="#">
-                                    <h4 class="font-bold hover:underline">HP Pavilion 15</h4>
-                                </a>
-                                <p class="text-[15px] text-[red]">$450.000000</p>
-                                <p>130,000,000 lượt xem</p>
-                            </div>
-                            <div class="conten-item ">
-                                <button>Add to cart</button>
-                            </div>
-                        </div>
-                    </form>
-                    <form action="">
-                        <div class=" khoiy border-solid border-2 border-[#f3f3f3] rounded-lg  ">
-                            <div class=" w-[66%]  m-auto ">
-                                <a href="#"> <img src="https://image.made-in-china.com/202f0j00KZUiGpwMLhos/M9-Plus-7-0inch-12g-512g-24MP-Cheap-Smart-Phones-4G-Mobile-Android-Cell-Phones-Lowest-Price-Mobail-Phone.webp" alt="" height="100px"></a>
-                            </div>
-                            <div class="py-[10px] px-[10px] leading-8">
-                                <a href="#">
-                                    <h4 class="font-bold hover:underline">HP Pavilion 15</h4>
-                                </a>
-                                <p class="text-[15px] text-[red]">$450.000000</p>
-                                <p>130,000,000 lượt xem</p>
-                            </div>
-                            <div class="conten-item ">
-                                <button>Add to cart</button>
-                            </div>
-                        </div>
-                    </form>
-                    <form action="">
-                        <div class=" khoiy border-solid border-2 border-[#f3f3f3] rounded-lg  ">
-                            <div class=" w-[100%] ">
-                                <a href="#"> <img src="https://vnn-imgs-f.vgcloud.vn/2019/08/07/23/apple-tiep-tuc-thong-tri-thi-truong-may-tinh-bang.jpg" alt=""></a>
-                            </div>
-                            <div class="py-[10px] px-[10px] leading-8">
-                                <a href="#">
-                                    <h4 class="font-bold hover:underline">HP Pavilion 15</h4>
-                                </a>
-                                <p class="text-[15px] text-[red]">$450.000000</p>
-                                <p>130,000,000 lượt xem</p>
-                            </div>
-                            <div class="conten-item ">
-                                <button>Add to cart</button>
-                            </div>
-                        </div>
-                    </form>
-                    <form action="">
-                        <div class=" khoiy border-solid border-2 border-[#f3f3f3] rounded-lg  ">
-                            <div class=" w-[100%] ">
-                                <a href="#"> <img src="https://vnn-imgs-f.vgcloud.vn/2019/08/07/23/apple-tiep-tuc-thong-tri-thi-truong-may-tinh-bang.jpg" alt=""></a>
-                            </div>
-                            <div class="py-[10px] px-[10px] leading-8">
-                                <a href="#">
-                                    <h4 class="font-bold hover:underline">HP Pavilion 15</h4>
-                                </a>
-                                <p class="text-[15px] text-[red]">$450.000000</p>
-                                <p>130,000,000 lượt xem</p>
-                            </div>
-                            <div class="conten-item ">
-                                <button>Add to cart</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                  ${await producthome.render()}
             </div>
         </article>
                 <footer class="bg-[#f3f3f3] min-w-full m-auto">
                 ${footer.render()}
                 </footer>
-
         `;
     },
     afterRender(id) {
         Headers.afterRender();
-        $("#btnAddToCart").addEventListener("click", async() => {
+        $("#btnAddToCart").addEventListener("click", async () => {
             const { data } = await get(id);
             console.log(data);
-            addToCart({...data, quantity: 1 },
+            addToCart(
+                { ...data, quantity: 1 },
 
                 () => {
-                    toastr.success(`Them san pham ${data.name} Thanh cong`);
+                    toastr.success(`Them san pham ${data.productname} Thanh cong`);
                 },
             );
         });

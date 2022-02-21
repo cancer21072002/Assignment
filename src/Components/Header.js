@@ -4,27 +4,20 @@ const Headers = {
     render() {
         return /* html */ `
      
-            <div class="header-top flex items-center justify-between h-[90px] w-[1200px] m-auto">
-                <figure class="logo ">
+            <div class="header-top flex items-center justify-between h-[100px] w-[1200px] m-auto">
+                <figure class="logo "  >
                     <a href="/">
-                        <img class="" src="https://media.designrush.com/inspirations/129360/conversions/_1513770087_98_chanel1-preview.jpg" width="150px" >
+                        <img class="" src="https://media.designrush.com/inspirations/129360/conversions/_1513770087_98_chanel1-preview.jpg" width="100%" >
                     </a>
                 </figure>
                 <div>
                     <ul class="w-[800px] pl-10 flex ">
                         <li class="hover:underline decoration-solid"><a class="px-[20px]" href="/">Trang Chủ</a></li>
-                        <li class="hover:underline decoration-solid"><a class="px-[20px]" href="/products">Sản Phẩm</a></li>
-                        <li class="hover:underline decoration-solid"><a class="px-[20px]" href="">Mua Sắm</a></li>
-                        <li class="hover:underline decoration-solid"><a class="px-[20px]" href="">Giới Thiệu</a></li>
-                        <li class="hover:underline decoration-solid"><a class="px-[20px]" href="">Liên Hệ</a></li>
-                        <!-- <li class="px-[20px]">
-                        <a href="#">Home <span><i class="las la-angle-down"></i></span></a>
-                        <ul class="subnav">
-                            <li><a href="index-1.html">Home page 1 </a></li>
-                            <li><a href="index-2.html">Home page 2</a></li>
-                            <li><a href="index-3.html">Home page 3</a></li>
-                        </ul>
-                    </li> -->
+                        <li class="hover:underline decoration-solid"><a class="px-[20px]" href="/#/products">Sản Phẩm</a></li>
+                        <li class="hover:underline decoration-solid"><a class="px-[20px]" href="/#/c">Giỏ hàng</a></li>
+                        <li class="hover:underline decoration-solid"><a class="px-[20px]" href="/#/blog">Blog</a></li>
+                        <li class="hover:underline decoration-solid"><a class="px-[20px]" href="/contact">Liên Hệ</a></li>
+                        
                     </ul>
                 </div>
                 <div class="flex text-center checksn">
@@ -58,7 +51,7 @@ const Headers = {
                 <div class="header-top bg-rose-100 flex justify-between h-[80px] w-[1200px] m-auto">
                     <div class="nav pt-5">
                         <div>
-                            <button class="bg-[#2b2d42] text-[#ffffff] hover:text-[#ff0000] mx-4 px-[20px] py-[8px] ">All categories</button>
+                            <button class="bg-[#2b2d42] text-[#ffffff] hover:text-[#ff0000] mx-4 px-[20px] py-[8px] ">Danh Mục</button>
                         </div>
                     </div>
                     <form action="" class="w-[700px] mt-5  pl-4 flex ">
