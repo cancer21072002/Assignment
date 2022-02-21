@@ -1,31 +1,31 @@
 import { getAll } from "../api/posts";
 
 const content = {
-        async render() {
-            const { data } = await getAll();
-            return /* html */ `
+    async render() {
+        const { data } = await getAll();
+        return /* html */ `
             <div class="flex">
-                <div class="grid w-[200px] h-[100%]">
-                    <ul class="border-solid border-2 border[#f3f3f3]">
-                        <li class="px-[30px] py-[10px]  hover:bg-[#f3f3f3] "><a class="" href="">Phone Samsung</a></li>
+                <div class="w-[200px] h-[100%]">
+                    <ul class="border-solid border-2 border[#f3f3f3] h-[100%]">
+                        <li class="px-[30px] py-[10px]  hover:bg-[#f3f3f3] "><a class="" href="">Nước Hoa</a></li>
                         <hr>
-                        <li class="px-[30px] py-[10px]  hover:bg-[#f3f3f3]   "><a class="" href="">Phone Samsung</a></li>
+                        <li class="px-[30px] py-[10px]  hover:bg-[#f3f3f3]   "><a class="" href="">Nước Hoa</a></li>
                         <hr>
-                        <li class="px-[30px] py-[10px]  hover:bg-[#f3f3f3]  "><a class="" href="">Phone Samsung</a></li>
+                        <li class="px-[30px] py-[10px]  hover:bg-[#f3f3f3]  "><a class="" href="">Nước Hoa</a></li>
                         <hr>
-                        <li class="px-[30px] py-[10px]  hover:bg-[#f3f3f3]  "><a class="" href="">Phone Samsung</a></li>
+                        <li class="px-[30px] py-[10px]  hover:bg-[#f3f3f3]  "><a class="" href="">Nước Hoa</a></li>
                         <hr>
-                        <li class="px-[30px] py-[10px]   hover:bg-[#f3f3f3] "><a class="" href="">Phone Samsung</a></li>
+                        <li class="px-[30px] py-[10px]   hover:bg-[#f3f3f3] "><a class="" href="">Nước Hoa</a></li>
                         <hr>
-                        <li class="px-[30px] py-[10px]   hover:bg-[#f3f3f3] "><a class="" href="">Phone Samsung</a></li>
+                        <li class="px-[30px] py-[10px]   hover:bg-[#f3f3f3] "><a class="" href="">Nước Hoa</a></li>
                         <hr>
-                        <li class="px-[30px] py-[10px]  hover:bg-[#f3f3f3]  "><a class="" href="">Phone Samsung</a></li>
+                        <li class="px-[30px] py-[10px]  hover:bg-[#f3f3f3]  "><a class="" href="">Nước Hoa</a></li>
                         <hr>
-                        <li class="px-[30px] py-[10px]  hover:bg-[#f3f3f3]  "><a class="" href="">Phone Samsung</a></li>
+                        <li class="px-[30px] py-[10px]  hover:bg-[#f3f3f3]  "><a class="" href="">Nước Hoa</a></li>
                     </ul>
                 </div>
-                <div class="banner bg-[white] w-[1000px] scroll-mb-[10px]">
-                    <img style="" id='anh' src='IMG/1.png' alt="" width='97%'><br>
+                <div class="banner bg-[white] w-[100%]">
+                    <img style="height: 97%" id='anh' src='https://hali.vn/wp-content/uploads/2020/07/thiet-ke-banner-my-pham5.jpg' alt="" width='100%'>
                 </div>
             </div>
             <div class="mx-[120px] grid grid-cols-3 gap-6 overflow-hidden relative  my-[20px]">
@@ -65,7 +65,7 @@ const content = {
                     <form action="">
                         <div class=" khoiy border-solid border-2 border-[#f3f3f3] rounded-lg overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer  ">
                             <div class=" w-[100%] ">
-                                <a href="#"> <img src="https://vnn-imgs-f.vgcloud.vn/2019/08/07/23/apple-tiep-tuc-thong-tri-thi-truong-may-tinh-bang.jpg" alt=""></a>
+                                <a href="#"> <img src="https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_auto,fl_lossy,dpr_1.2/w_620/n-5-l-eau-eau-de-toilette-spray-3-4fl-oz--packshot-default-105530-8848376922142.jpg" alt=""></a>
                             </div>
                             <div class="py-[10px] px-[10px] leading-8">
                                 <a href="#">
@@ -79,10 +79,29 @@ const content = {
                             </div>
                         </div>
                     </form>
+
+                     <form action="">
+                        <div class=" khoiy border-solid border-2 border-[#f3f3f3] rounded-lg overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer ">
+                            <div class=" w-[100%] ">
+                                <a href="#"> <img src="https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_auto,fl_lossy,dpr_1.2/w_620/bleu-de-chanel-eau-de-parfum-spray-3-4fl-oz--packshot-default-107360-8848377380894.jpg" alt=""></a>
+                            </div>
+                            <div class="py-[10px] px-[10px] leading-8">
+                                <a href="#">
+                                    <h4 class="font-bold hover:underline">HP Pavilion 15</h4>
+                                </a>
+                                <p class="text-[15px] text-[red]">$450.000000</p>
+                                <p>130,000,000 lượt xem</p>
+                            </div>
+                            <div class="conten-item ">
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                    </form>
+                    
                     <form action="">
-                        <div class=" khoiy border-solid border-2 border-[#f3f3f3] rounded-lg overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer  ">
-                            <div class=" w-[66%]  m-auto ">
-                                <a href="#"> <img src="https://image.made-in-china.com/202f0j00KZUiGpwMLhos/M9-Plus-7-0inch-12g-512g-24MP-Cheap-Smart-Phones-4G-Mobile-Android-Cell-Phones-Lowest-Price-Mobail-Phone.webp" alt="" height="100px"></a>
+                        <div class=" khoiy border-solid border-2 border-[#f3f3f3] rounded-lg overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer ">
+                            <div class=" w-[100%] ">
+                                <a href="#"> <img src="https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_auto,fl_lossy,dpr_1.2/w_620/coco-mademoiselle-eau-de-parfum-spray-3-4fl-oz--packshot-default-116520-8848376659998.jpg" alt=""></a>
                             </div>
                             <div class="py-[10px] px-[10px] leading-8">
                                 <a href="#">
@@ -99,24 +118,7 @@ const content = {
                     <form action="">
                         <div class=" khoiy border-solid border-2 border-[#f3f3f3] rounded-lg overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer ">
                             <div class=" w-[100%] ">
-                                <a href="#"> <img src="https://vnn-imgs-f.vgcloud.vn/2019/08/07/23/apple-tiep-tuc-thong-tri-thi-truong-may-tinh-bang.jpg" alt=""></a>
-                            </div>
-                            <div class="py-[10px] px-[10px] leading-8">
-                                <a href="#">
-                                    <h4 class="font-bold hover:underline">HP Pavilion 15</h4>
-                                </a>
-                                <p class="text-[15px] text-[red]">$450.000000</p>
-                                <p>130,000,000 lượt xem</p>
-                            </div>
-                            <div class="conten-item ">
-                                <button>Add to cart</button>
-                            </div>
-                        </div>
-                    </form>
-                    <form action="">
-                        <div class=" khoiy border-solid border-2 border-[#f3f3f3] rounded-lg overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer ">
-                            <div class=" w-[100%] ">
-                                <a href="#"> <img src="https://vnn-imgs-f.vgcloud.vn/2019/08/07/23/apple-tiep-tuc-thong-tri-thi-truong-may-tinh-bang.jpg" alt=""></a>
+                                <a href="#"> <img src="https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_auto,fl_lossy,dpr_1.2/w_620/bleu-de-chanel-parfum-twist-and-spray-3x0-7fl-oz--packshot-default-107120-8826672349214.jpg" alt=""></a>
                             </div>
                             <div class="py-[10px] px-[10px] leading-8">
                                 <a href="#">
@@ -133,7 +135,7 @@ const content = {
                 </div>
                 <div>
                     <div class="banner2 my-[30px]">
-                        <img src="https://rafcart.rslahmed.com/assets/images/offer-3.jpg" alt="">
+                        <img src="https://storage.googleapis.com/sonduongmoi-com/2020/02/bbea4357-1551264167_chanel_perfume_banner.png" alt="">
                     </div>
                 </div>
             </div>
@@ -145,7 +147,9 @@ const content = {
     <div class="max-w-2xl mx-auto py-8 sm:py-10 lg:max-w-none">
             <div class="container  mx-auto max-w-7x1">
             <div class="flex flex-wrap -m-4">
-                 ${data.map((post) => `
+                 ${data
+        .map(
+            (post) => `
          <div class="xl:w-1/3 md:w-1/2 p-4 overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer">
                     <div class="bg-white p-6 rounded-lg">
                         <a href="/new/${post.id}">   <img class="lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72 rounded w-full object-cover object-center mb-6" src="${post.image}"></a>
@@ -158,7 +162,9 @@ const content = {
 
 
 
-         `).join("")}
+         `,
+        )
+        .join("")}
     </div>
        </div>
           </div>
@@ -173,10 +179,10 @@ const content = {
             
             <div class="bg-[#f3f3f3] grid grid-cols-2 gap-5 my-[20px] ">
                 <div class="img-1">
-                    <img src="https://rafcart.rslahmed.com/assets/images/mobile-view.png" alt="" class="w-[50%] m-auto">
+                    <img src="https://file.hstatic.net/1000025647/file/nuoc-hoa-chanel_8ba9e242a3ca44ebb206fb98d513d0b9_1024x1024.jpg" alt="" class="w-[80%] m-4">
                 </div>
                 <div class="conten2 py-[10%] ">
-                    <h1 class="font-bold text-[30px] text-center">Download RAFCART App Now!</h1>
+                    <h1 class="font-bold text-[30px] text-center">ORDER CHANEL Now!</h1>
                     <p class="py-[10px]">Shopping fastly and easily more with our app. Get a link to download the app on your phone</p>
                     <form action="" class="w-[700px] flex ">
                         <input type="text" class="h-10 w-8/12 pl-3 rounded-sm" placeholder="Email Address">

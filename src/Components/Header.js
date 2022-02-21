@@ -4,19 +4,19 @@ const Headers = {
     render() {
         return /* html */ `
      
-            <div class="header-top flex justify-between h-[80px] w-[1200px] m-auto">
-                <figure class="logo pt-5">
+            <div class="header-top flex items-center justify-between h-[90px] w-[1200px] m-auto">
+                <figure class="logo ">
                     <a href="/">
-                        <img src="https://pngset.com/images/gucci-gucci-logo-design-vector-free-download-text-alphabet-symbol-transparent-png-1884370.png" width="150px">
+                        <img class="" src="https://media.designrush.com/inspirations/129360/conversions/_1513770087_98_chanel1-preview.jpg" width="150px" >
                     </a>
                 </figure>
                 <div>
-                    <ul class="w-[800px] mt-5 pl-10 flex ">
-                        <li><a class="px-[20px]" href="/">Homepage</a></li>
-                        <li><a class="px-[20px]" href="/products">product</a></li>
-                        <li><a class="px-[20px]" href="">Shopping</a></li>
-                        <li><a class="px-[20px]" href="">Phone</a></li>
-                        <li><a class="px-[20px]" href="">Contact</a></li>
+                    <ul class="w-[800px] pl-10 flex ">
+                        <li class="hover:underline decoration-solid"><a class="px-[20px]" href="/">Trang Chủ</a></li>
+                        <li class="hover:underline decoration-solid"><a class="px-[20px]" href="/products">Sản Phẩm</a></li>
+                        <li class="hover:underline decoration-solid"><a class="px-[20px]" href="">Mua Sắm</a></li>
+                        <li class="hover:underline decoration-solid"><a class="px-[20px]" href="">Giới Thiệu</a></li>
+                        <li class="hover:underline decoration-solid"><a class="px-[20px]" href="">Liên Hệ</a></li>
                         <!-- <li class="px-[20px]">
                         <a href="#">Home <span><i class="las la-angle-down"></i></span></a>
                         <ul class="subnav">
@@ -27,7 +27,7 @@ const Headers = {
                     </li> -->
                     </ul>
                 </div>
-                <div class="flex mt-5 text-center checksn">
+                <div class="flex text-center checksn">
                 
                     
     
@@ -42,7 +42,8 @@ const Headers = {
                         
                           
                     `
-        : `<span class=\"sm:ml-3\"><a href=\"/singup\"><button type=\"button\" class=\"inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[red] hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500\">Sing up </button></a></span> <span class=\"sm:ml-3\"><a href=\"/singin\"><button type=\"button\" class=\"inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500\">Sing in</button></a></span>`
+        : `<span class="sm:ml-3"><a href="/signup"><button type="button" class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-pink-400 hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Sign up </button></a></span> 
+        <span class="sm:ml-3"><a href="/signin"><button type="button" class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-400 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Sign in</button></a></span>`
 }
                      </ul>
                     
@@ -50,18 +51,18 @@ const Headers = {
                 </div>
 
             </div>
-            <div class="bg-[#fd3d57]">
+           
 
 
 
-                <div class="header-top bg-[#fd3d57] flex justify-between h-[80px] w-[1200px] m-auto">
+                <div class="header-top bg-rose-100 flex justify-between h-[80px] w-[1200px] m-auto">
                     <div class="nav pt-5">
                         <div>
-                            <button class="bg-[#2b2d42] text-[#ffffff] hover:text-[#ff0000] px-[20px] py-[8px] ">All categories</button>
+                            <button class="bg-[#2b2d42] text-[#ffffff] hover:text-[#ff0000] mx-4 px-[20px] py-[8px] ">All categories</button>
                         </div>
                     </div>
-                    <form action="" class="w-[700px] mt-5 pl-10 flex ">
-                        <input type="text" class="h-10 w-10/12 pl-3 rounded-sm" placeholder="Nhập tên điện thoại, máy tính, phụ kiện... cần tìm">
+                    <form action="" class="w-[700px] mt-5  pl-4 flex ">
+                        <input type="text" class="h-10 w-10/12 pl-3 rounded-sm" placeholder="Nhập tên nước hoa bạn cần tìm">
                         <div>
                             <button class="bg-[#2b2d42] text-[#ffffff] hover:text-[#ff0000] px-[20px] py-[8px] rounded-r-lg">Tìm kiếm</button>
                         </div>
@@ -70,13 +71,13 @@ const Headers = {
 
                         <div class="signin pl-5">
                               
-          <ul class="flex">
+          <ul   class="flex">
 
                      </ul>
                         </div>
                     </div>
                 </div>
-            </div>
+            
 `;
     },
     afterRender() {

@@ -1,5 +1,5 @@
 import toastr from "toastr";
-import { signup } from "../api/user";
+import { add, signup } from "../api/user";
 import "toastr/build/toastr.min.css";
 import { reRender } from "../utils";
 import Homepage from "./Home";
@@ -12,7 +12,7 @@ const singup = {
             <!-- Row -->
             <div class="w-full xl:w-3/4 lg:w-11/12 flex">
                 <!-- Col -->
-                <div class="w-full h-auto bg-gray-400 hidden lg:block lg:w-1/2 bg-cover rounded-l-lg" style="background-image: url('https://thongtinz.com/wp-content/uploads/2020/08/hinh-nen-phong-canh-1.jpg')"></div>
+                <div class="w-full h-auto bg-gray-400 hidden lg:block lg:w-1/2 bg-cover rounded-l-lg" style="background-image: url('https://i.pinimg.com/originals/d6/c0/c4/d6c0c41311ff3d970995cf79ea28b839.jpg')"></div>
                 <!-- Col -->
                 <div class="w-full lg:w-1/2 bg-white p-5 rounded-lg lg:rounded-l-none">
                 <a href="/singin"> 
@@ -48,7 +48,7 @@ const singup = {
                         </div>
                         
                         <div class="mt-7">
-                            <button src="submit" class="bg-blue-500 w-full py-3 rounded-xl text-white shadow-xl hover:shadow-inner focus:outline-none transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
+                            <button type="submit" class="bg-blue-500 w-full py-3 rounded-xl text-white shadow-xl hover:shadow-inner focus:outline-none transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
                                     sign up
                                 </button>
                         </div>
@@ -85,16 +85,17 @@ const singup = {
     },
     afterRender() {
         const formSignup = document.querySelector("#formSignup");
-        formSignup.addEventListener("submit", async(e) => {
+        formSignup.addEventListener("submit", async (e) => {
             e.preventDefault();
             // call api
             toastr.success("dang Ky thanh cong");
-            signup({
+            add({
                 username: document.querySelector("#username").value,
                 email: document.querySelector("#email-address").value,
+                image: "http://res.cloudinary.com/hongvan/image/upload/v1645371911/products/e1ph7du5swjsycbm6qqw.jpg",
                 password: document.querySelector("#password").value,
-            }).then(async(res) => {
-                document.location.href = "/singin";
+            }).then(async (res) => {
+                document.location.href = "/signin";
                 await reRender(Homepage, "#app");
             });
         });

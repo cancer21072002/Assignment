@@ -4,9 +4,9 @@ const footer = {
             <div class=" w-[1200px] m-auto grid grid-cols-4 pt-10 pb-10 gap-[20px] ">
                 <div class="w-[320px] px-[20px] ">
                     <div>
-                        <img src="https://rafcart.rslahmed.com/assets/images/svg/logo.svg" alt="">
+                        <img src="https://media.designrush.com/inspirations/129360/conversions/_1513770087_98_chanel1-preview.jpg" height="150px" alt="" >
                     </div>
-                    <p class="py-[10px] leading-5"><a href="#">Lorem ipsum, or it is sometimes kno wn, is dummy text used in laying out print.</a></p>
+                    
                     <div>
                         <div class="footer_newslet">
                             <h6 class="font-bold py-[10px]">NEWSLETTER</h6>
@@ -44,14 +44,14 @@ const footer = {
 FAQ</a></p>
                     </div>
                 </div>
-                <div class="intro px-[20px]">
+                <div class="intro px-[15px]">
                     <div>
                         <h2 class="font-bold leading-8 ">CONTACT</h2>
                     </div>
-                    <div class="pt-[10px] leading-8">
+                    <div class="pt-[1px] leading-8">
                         <p><a href="">Tòa nhà FPT Polytechnic, P. Trịnh Văn Bô, Xuân Phương, Nam Từ Liêm, Hà Nội</a></p>
-                        <p><a href="">Phone :+566 477 256, +566 254 575</a></p>
-                        <p><a href="">Email : Thetam1998@gmail.com</a></p>
+                        <p><a href="">Phone :+123 456 789, +777 888 999</a></p>
+                        <p><a href="">Email : vandthph13979@fpt.edu.vn</a></p>
 
                     </div>
                 </div>

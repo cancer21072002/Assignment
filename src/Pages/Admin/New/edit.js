@@ -1,6 +1,6 @@
 import axios from "axios";
 import moment from "moment";
-import {get, upload } from "../../../api/posts";
+import { get, upload } from "../../../api/posts";
 import Navadmin from "../../../Components/Admindashoard/Navadmin";
 import NewPage from "./index";
 import { reRender } from "../../../utils";
@@ -18,7 +18,7 @@ ${headeradmin.render()}
         <main class="h-full overflow-y-auto">
             <div class="container px-6 mx-auto grid">
                 <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
-                   Them Bai Viet
+                   Sua Bai Viet
                 </h2>
 <div class="mt-5 md:mt-0 md:col-span-2">
        <form action="" id="form-edit-post">
@@ -84,7 +84,7 @@ ${headeradmin.render()}
         const CLOUDINARY_API = "https://api.cloudinary.com/v1_1/hongvan/image/upload";
         const CLOUDINARY_PRESET = "assignment";
 
-        formEdit.addEventListener("submit", async(e) => {
+        formEdit.addEventListener("submit", async (e) => {
             e.preventDefault();
             const file = imgPost.files[0];
             const formData = new FormData();
@@ -104,7 +104,7 @@ ${headeradmin.render()}
                 content: document.querySelector("#content-post").value,
                 day: moment(new Date()).format("DD-MM-YYYY"),
 
-            }).then(async(res) => {
+            }).then(async (res) => {
                 document.location.href = "/admin/news";
                 await reRender(NewPage, "#app");
             });

@@ -4,9 +4,9 @@ import { reRender } from "../../../utils";
 import headeradmin from "../../../Components/Admindashoard/Headderadmin";
 
 const productsadmin = {
-        async render() {
-            const { data } = await getAll();
-            return /* html */ `
+    async render() {
+        const { data } = await getAll();
+        return /* html */ `
   
  <div class="flex h-screen bg-gray-50 dark:bg-gray-900" :class="{ 'overflow-hidden': isSideMenuOpen}">
     <!-- Desktop sidebar -->
@@ -77,7 +77,9 @@ ${headeradmin.render()}
             </tr>
           </thead>
           <tbody class="bg-white divide-y divide-gray-200">
-            ${data.map((products, index) => `
+            ${data
+        .map(
+            (products, index) => `
             <tr>
               <td class="px-6 py-4 whitespace-nowrap">
                 <div class="flex items-center">
@@ -85,24 +87,38 @@ ${headeradmin.render()}
                 </div>
               </td>
               <td class="px-6 py-4 whitespace-nowrap">
-           ${products.name}
+           ${products.productname}
               </td>
                     <td class="px-6 py-4 whitespace-nowrap">
-                   <img src="${products.image}" alt="" class="w-[90px] h-[100px]">
+                   <img src="${
+    products.image
+}" alt="" class="w-[90px] h-[100px]">
               </td>
         
-                <td class="px-1 py-4 whitespace-nowrap text-sm text-gray-500 ">      ${products.price}</td>
-                     <td class="px-1 py-4 whitespace-nowrap text-sm text-gray-500 ">      ${products.quantity}</td>
-                          <td class="px-1 py-4 whitespace-nowrap text-sm text-gray-500 ">      ${products.details}</td>
+                <td class="px-1 py-4 whitespace-nowrap text-sm text-gray-500 ">      ${
+    products.price
+}</td>
+                     <td class="px-1 py-4 whitespace-nowrap text-sm text-gray-500 ">      ${
+    products.quantity
+}</td>
+                          <td class="px-1 py-4 whitespace-nowrap text-sm text-gray-500 ">      ${
+    products.detail
+}</td>
                          <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                <a href="/admin/news/${products.id}/edituser" class="text-indigo-600 hover:text-indigo-900">Sửa</a>
+                <a href="/admin/products/${
+    products.id
+}/edit" class="text-indigo-600 hover:text-indigo-900">Sửa</a>
               </td>
                  <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                <button data-id="${products.id}" class="btn btn-remove">Remove</button>
+                <button data-id="${
+    products.id
+}" class="btn btn-remove">Remove</button>
               </td>
        
             </tr>
-                `).join("")}
+                `,
+        )
+        .join("")}
           </tbody>
         </table>
         

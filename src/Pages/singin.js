@@ -1,16 +1,17 @@
 import toastr from "toastr";
-import { signin } from "../api/user";
+// import { signin } from "../api/user";
 import "toastr/build/toastr.min.css";
+import { getAll } from "../api/user";
 
 const singin = {
     async render() {
         return /* html */ `
             <div class="container mx-auto">
-        <div class="flex justify-center px-6 my-12">
+            <div class="flex justify-center px-6 my-12">
             <!-- Row -->
             <div class="w-full xl:w-3/4 lg:w-11/12 flex">
                 <!-- Col -->
-                <div class="w-full h-auto bg-gray-400 hidden lg:block lg:w-1/2 bg-cover rounded-l-lg" style="background-image: url('https://thongtinz.com/wp-content/uploads/2020/08/hinh-nen-phong-canh-1.jpg')"></div>
+                <div class="w-1/2  bg-gray-400 hidden lg:block lg:w-1/2 bg-cover rounded-l-lg" style="background-image: url('https://images-na.ssl-images-amazon.com/images/I/91Nrs4VePuL.jpg')"></div>
                 <!-- Col -->
                 <div class="w-full lg:w-1/2 bg-white p-5 rounded-lg lg:rounded-l-none">
                     <h3 class="pt-4 text-2xl text-center">Welcome Back!</h3>
@@ -95,8 +96,25 @@ const singin = {
     },
     afterRender() {
         const formSignin = document.querySelector("#formSignin");
-        formSignin.addEventListener("submit", async(e) => {
+        formSignin.addEventListener("submit", async (e) => {
             e.preventDefault();
+            const email = document.querySelector("#email-address").value;
+            const password = document.querySelector("#password").value;
+
+            const { data: users } = await getAll();
+            for (let i = 0; i < users.length; i++) {
+                if (email == "" || password == "") {
+                    alert("Bạn chưa điền thông tin đăng nhập !");
+                } else if (email != users[i].email && password != users[i].password) {
+                    alert("Tên đăng nhập hoặc mật khẩu sai");
+                } else if (email == users[i].email && password == users[i].password) {
+                    const maxInNumbers = Math.random();
+                    const user = { id: `${maxInNumbers}`, ...users[i] };
+                    localStorage.setItem("user", JSON.stringify(user));
+                    toastr.success("dang nhap thanh cong");
+                }
+            }
+            console.log(users);
             try {
                 // call api
                 const { data } = await signin({
@@ -106,6 +124,7 @@ const singin = {
 
                 localStorage.setItem("user", JSON.stringify(data.user));
                 toastr.success("dang nhap thanh cong");
+                console.log(data.user);
                 setTimeout(() => {
                     if (data.user.id == 1) {
                         document.location.href = "/admin/news";

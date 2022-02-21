@@ -12,12 +12,14 @@ import detail from "./Pages/products/detail";
 import CartPase from "./Pages/products/cart";
 import AddnewUser from "./Pages/Admin/user/add";
 import Editnewsuser from "./Pages/Admin/user/edit";
+import AddnewProduct from "./Pages/Admin/Products/add";
+import EditProduct from "./Pages/Admin/Products/edit";
 import users from "./Pages/Admin/user";
 import productsadmin from "./Pages/Admin/Products";
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
 
-const print = async(content, id) => {
+const print = async (content, id) => {
     document.getElementById("app").innerHTML = await content.render(id);
     if (content.afterRender) content.afterRender(id);
 };
@@ -28,10 +30,10 @@ router.on("/admin/*", () => {}, {
             if (id == 1) {
                 done();
             } else {
-                document.location.href = "/";
+                windown.location.href = "/admin/dashboard";
             }
         } else {
-            document.location.href = "/";
+            windown.location.href = "/";
         }
     },
 });
@@ -40,12 +42,12 @@ router.on({
     "/": () => print(Homepage),
 
     "/new/:id": ({ data }) => print(newlist, data.id),
-    "/singup": () => print(singup),
-    "/singin": () => print(singin),
+    "/signup": () => print(singup),
+    "/signin": () => print(singin),
     "/admin/dashboard": () => print(Dashboard),
     "/products": () => print(product),
     "/products/:id": ({ data }) => print(detail, data.id),
-    "/cart": () => print(CartPase),
+    "/c": () => print(CartPase),
     // admin dashboard
     // add post
     "/admin/news": () => print(NewPage),
@@ -57,9 +59,8 @@ router.on({
     "/admin/news/:id/edituser": ({ data }) => print(Editnewsuser, data.id),
     // add products
     "/admin/products": () => print(productsadmin),
-    "/admin/products/add": () => print(AddnewUser),
-    "/admin/products/:id/edit": ({ data }) => print(Editnewsuser, data.id),
-
+    "/admin/products/add": () => print(AddnewProduct),
+    "/admin/products/:id/edit": ({ data }) => print(EditProduct, data.id),
 });
 router.resolve();
 // fetch("https://6203e391c6d8b20017dc3315.mockapi.io/Post")

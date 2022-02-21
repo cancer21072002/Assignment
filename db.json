@@ -3,61 +3,110 @@
     {
       "id": 1,
       "title": "Bai Viet so 122222",
-      "image": "http://res.cloudinary.com/ecommercer/image/upload/v1645197911/Anh/isblngjlplm7ih1lvltk.jpg",
-      "introduce": "    Tailwind automatically removes all unused CSS when building for production, which means your final CSS bundle is the smallest it could possibly be. In fact, most Tailwind projects ship less than 10kB of CSS to the client.22222",
+      "image": "http://res.cloudinary.com/hongvan/image/upload/v1645377727/products/vms28vzjz7jukd0ybkbv.jpg",
+      "introduce": "     Tailwind automatically removes all unused CSS when building for production, which means your final CSS bundle is the smallest it could possibly be. In fact, most Tailwind projects ship less than 10kB of CSS to the client.22222",
       "content": "This sunny and spacious room is for those traveling light and looking for a comfy and cosy place to lay their head for a night or two. This beach house sits in a vibrant neighborhood littered with cafes, pubs, restaurants and supermarkets and is close to all the major attractions such as Edinburgh Castle and Arthur's Seat.22222",
-      "day": "18-02-2022"
+      "day": "21-02-2022"
     },
     {
       "id": 2,
       "title": "Bai Viet so 20",
-      "image": "http://res.cloudinary.com/ecommercer/image/upload/v1645192078/Anh/iwg9akomeigxdydfb7u8.jpg",
-      "introduce": "  Tailwind automatically removes all unused CSS when building for production, which means your final CSS bundle is the smallest it could possibly be. In fact, most Tailwind projects ship less than 10kB of CSS to the client.0",
+      "image": "http://res.cloudinary.com/hongvan/image/upload/v1645377744/products/b4rymmlnndclfwdeyruv.jpg",
+      "introduce": "   Tailwind automatically removes all unused CSS when building for production, which means your final CSS bundle is the smallest it could possibly be. In fact, most Tailwind projects ship less than 10kB of CSS to the client.0",
       "content": "This sunny and spacious room is for those traveling light and looking for a comfy and cosy place to lay their head for a night or two. This beach house sits in a vibrant neighborhood littered with cafes, pubs, restaurants and supermarkets and is close to all the major attractions such as Edinburgh Castle and Arthur's Seat.0",
-      "day": "18-02-2022"
+      "day": "21-02-2022"
     },
     {
       "id": 3,
       "title": "Bai Viet so 3",
-      "image": "http://res.cloudinary.com/ecommercer/image/upload/v1645172281/Anh/d3efx1obluxltexkgard.jpg",
-      "username": "Thetam1002@gmail.com",
-      "introduce": "Tailwind automatically removes all unused CSS when building for production, which means your final CSS bundle is the smallest it could possibly be. In fact, most Tailwind projects ship less than 10kB of CSS to the client.",
+      "image": "http://res.cloudinary.com/hongvan/image/upload/v1645377755/products/xbzth6unqowqrobe7hja.jpg",
+      "introduce": " Tailwind automatically removes all unused CSS when building for production, which means your final CSS bundle is the smallest it could possibly be. In fact, most Tailwind projects ship less than 10kB of CSS to the client.",
       "content": "This sunny and spacious room is for those traveling light and looking for a comfy and cosy place to lay their head for a night or two. This beach house sits in a vibrant neighborhood littered with cafes, pubs, restaurants and supermarkets and is close to all the major attractions such as Edinburgh Castle and Arthur's Seat.",
-      "day": "22-01-2022"
+      "day": "21-02-2022"
     },
     {
+      "id": 4,
       "title": "Bai Viet so 20222",
-      "image": "http://res.cloudinary.com/ecommercer/image/upload/v1645197895/Anh/ju93vbiypafwbrpsxs69.jpg",
-      "introduce": "1eweqw",
+      "image": "http://res.cloudinary.com/hongvan/image/upload/v1645377765/products/yhpzau7hzplqltfh7urh.jpg",
+      "introduce": " 1eweqw",
       "content": "ewqeqw",
-      "day": "18-02-2022",
-      "id": 4
+      "day": "21-02-2022"
+    },
+    {
+      "title": "gvmbn",
+      "image": "http://res.cloudinary.com/hongvan/image/upload/v1645377830/products/coygzhlhqsrw9cmwd6mf.jpg",
+      "introduce": "mjvb j,b,",
+      "content": "hgfyjgk;ho",
+      "day": "21-02-2022",
+      "id": 5
+    },
+    {
+      "title": "gjvjkh",
+      "image": "http://res.cloudinary.com/hongvan/image/upload/v1645377855/products/nu3o8hiqcaizzvutyj8b.jpg",
+      "introduce": "vggkbvil ",
+      "content": "jhjln k",
+      "day": "21-02-2022",
+      "id": 6
     }
   ],
   "users": [
     {
-      "id": 1,
-      "email": "hongvan1998@gmail.com",
-      "password": "$2a$10$Q8iACh8ZkEi3I/9j2Wc/mOkjCFpmSXkQB2cWPz9qb2uytErnA5u1K",
-      "username": "Le The Tam",
-      "image": "http://res.cloudinary.com/ecommercer/image/upload/v1645260685/Anh/amef1g0i3v5rlfthoqp9.jpg"
+      "email": "admin@gmail.com",
+      "password": "123456",
+      "username": "admin",
+      "image": "http://res.cloudinary.com/hongvan/image/upload/v1645371911/products/e1ph7du5swjsycbm6qqw.jpg",
+      "id": 1
     },
     {
-      "email": "hongvan1002@gmail.com",
-      "password": "$2a$10$f3pcTbkq.ro7YP9TMQmNZ.G/o49YPAFgUltca8vX9fsv7rJTjE19O",
-      "username": "fsdfsd",
-      "image": "http://res.cloudinary.com/ecommercer/image/upload/v1645197895/Anh/ju93vbiypafwbrpsxs69.jpg",
+      "username": "lee min ho",
+      "email": "Monstergames812@gmail.com",
+      "password": "123452",
       "id": 2
+    },
+    {
+      "username": "vandthph13979",
+      "email": "hongyun2172002@gmail.com",
+      "password": "123456789",
+      "id": 3
+    },
+    {
+      "email": "vandthph13979@fpt.edu.vn",
+      "password": "6587879",
+      "username": "so2",
+      "image": "http://res.cloudinary.com/hongvan/image/upload/v1645378964/products/nsjycknp7gccdboys2tq.jpg",
+      "id": 8
+    },
+    {
+      "email": "hi123@gmail.com",
+      "password": "12345",
+      "username": "Lú luôn",
+      "image": "http://res.cloudinary.com/hongvan/image/upload/v1645419434/products/hnm840zrbl2gu4gt03hk.jpg",
+      "id": 9
+    },
+    {
+      "username": "Vanvuvo",
+      "email": "Monstergames812@gmail.com",
+      "image": "http://res.cloudinary.com/hongvan/image/upload/v1645371911/products/e1ph7du5swjsycbm6qqw.jpg",
+      "password": "147852",
+      "id": 10
     }
   ],
   "products": [
     {
-      "id": "1",
-      "name": "san pham con 1",
-      "image": "http://res.cloudinary.com/ecommercer/image/upload/v1645197895/Anh/ju93vbiypafwbrpsxs69.jpg",
-      "price": "1000000",
-      "quantity": "100",
-      "details": "Hàng Loai 1 chat lượng cao"
+      "price": "4543346",
+      "quantity": "4",
+      "productname": "sp1",
+      "image": "http://res.cloudinary.com/hongvan/image/upload/v1645383006/products/n5mec3olrn6cpiufstty.jpg",
+      "detail": "zvjks n vjn, k SJVN.  KVN  kLVJ  ",
+      "id": "knO3GlX"
+    },
+    {
+      "id": "Ao-3faT",
+      "price": "54564",
+      "quantity": "3",
+      "productname": "sp2",
+      "image": "http://res.cloudinary.com/hongvan/image/upload/v1645385091/products/hkk8qbfufiwirbjdjxqz.jpg",
+      "detail": "xdgdxhdx"
     }
   ]
 }
