@@ -7,7 +7,7 @@ const Headers = {
             <div class="header-top flex items-center justify-between h-[100px] w-[1200px] m-auto">
                 <figure class="logo "  >
                     <a href="/">
-                        <img class="" src="https://media.designrush.com/inspirations/129360/conversions/_1513770087_98_chanel1-preview.jpg" width="100%" >
+                        <img class="" src="https://media.designrush.com/inspirations/129360/conversions/_1513770087_98_chanel1-preview.jpg" width="70%" >
                     </a>
                 </figure>
                 <div>

@@ -94,11 +94,7 @@ const singin = {
 
             const { data: users } = await getAll();
             for (let i = 0; i < users.length; i++) {
-                if (email == "" || password == "") {
-                    alert("Bạn chưa điền thông tin đăng nhập !");
-                } else if (email != users[i].email && password != users[i].password) {
-                    alert("Tên đăng nhập hoặc mật khẩu sai");
-                } else if (email == users[i].email && password == users[i].password) {
+                if (email == users[i].email && password == users[i].password) {
                     const maxInNumbers = Math.random();
                     const user = { id: `${maxInNumbers}`, ...users[i] };
                     localStorage.setItem("user", JSON.stringify(user));

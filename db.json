@@ -2,19 +2,27 @@
   "categorys": [
     {
       "id": 3,
-      "name": "Nước Hoa CoCo"
+      "name": "CHANEL PARFUMEUR"
     },
     {
       "id": 4,
-      "name": "Nước Hoa N5"
+      "name": "LES EAUX DE CHANEL"
     },
     {
       "id": 5,
-      "name": "Nước Hoa Nữ "
+      "name": "COCO NOIR"
     },
     {
       "id": 6,
-      "name": "Nước Hoa Nam"
+      "name": "CHANCE EAU TENDRE"
+    },
+    {
+      "id": 7,
+      "name": "GABRIELLE CHANEL"
+    },
+    {
+      "name": "CHANEL CHANCE",
+      "id": 8
     }
   ],
   "posts": [
@@ -107,16 +115,23 @@
       "image": "http://res.cloudinary.com/hongvan/image/upload/v1645371911/products/e1ph7du5swjsycbm6qqw.jpg",
       "password": "147852",
       "id": 10
+    },
+    {
+      "username": "Vanvuvo",
+      "email": "admin789@gmail.com",
+      "image": "http://res.cloudinary.com/hongvan/image/upload/v1645371911/products/e1ph7du5swjsycbm6qqw.jpg",
+      "password": "0147",
+      "id": 11
     }
   ],
   "products": [
     {
+      "id": "knO3GlX",
       "price": "4543346",
       "quantity": "4",
       "productname": "sp1",
-      "image": "http://res.cloudinary.com/hongvan/image/upload/v1645383006/products/n5mec3olrn6cpiufstty.jpg",
-      "detail": "zvjks n vjn, k SJVN.  KVN  kLVJ  ",
-      "id": "knO3GlX"
+      "image": "http://res.cloudinary.com/hongvan/image/upload/v1645523950/products/ejtulaz0pgriaip4ewc7.jpg",
+      "detail": "zvjks n vjn, k SJVN.  KVN  kLVJ  "
     },
     {
       "id": "Ao-3faT",
@@ -125,6 +140,38 @@
       "productname": "sp2",
       "image": "http://res.cloudinary.com/hongvan/image/upload/v1645385091/products/hkk8qbfufiwirbjdjxqz.jpg",
       "detail": "xdgdxhdx"
+    },
+    {
+      "price": "4556",
+      "quantity": "45",
+      "productname": "sp3",
+      "image": "http://res.cloudinary.com/hongvan/image/upload/v1645522963/products/aqgdfsg5tr4qu8pcnqwg.jpg",
+      "detail": "mui huong ngot ngao",
+      "id": "p4beFqY"
+    },
+    {
+      "price": "1234",
+      "quantity": "12",
+      "productname": "sp4",
+      "image": "http://res.cloudinary.com/hongvan/image/upload/v1645522994/products/jko57jd3reaxceglgkug.jpg",
+      "detail": "mùi hương nam tính ",
+      "id": "W_jJSXw"
+    },
+    {
+      "price": "24356",
+      "quantity": "255",
+      "productname": "sp4",
+      "image": "http://res.cloudinary.com/hongvan/image/upload/v1645523070/products/jl5la6kp6bnle7ql6dap.jpg",
+      "detail": " mùi hương cơ thể tươi mát, sạch sẽ với một sự quyến rũ và hấp dẫn khó cưỡng toát ra từ bản thân.",
+      "id": "cMAMKAa"
+    },
+    {
+      "price": "345456",
+      "quantity": "45",
+      "productname": "fgvsb",
+      "image": "http://res.cloudinary.com/hongvan/image/upload/v1645523096/products/cbari1mwrifmbp3grc7e.jpg",
+      "detail": "bvzsb zgbznb",
+      "id": "rtjV11Y"
     }
   ]
 }
